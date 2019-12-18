@@ -4,4 +4,4 @@ This is a course project for SI140 2019 at ShanghaiTech offered by Prof. Ziyu Sh
 
 The project specification is [here](./bandit_project.pdf).
 
-[Simulation notebook](./three_armed_bandit.ipynb)
+[Simulation notebook](https://nbviewer.jupyter.org/github/DerekDick/awesome-multi-armed-bandit/blob/master/bandit_project/three_armed_bandit.ipynb)
