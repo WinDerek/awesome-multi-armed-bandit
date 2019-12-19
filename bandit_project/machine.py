@@ -1,5 +1,6 @@
 import numpy as np
 
+
 # The true values of the parameters of the reward distributions
 theta = [0.4, 0.6, 0.8]
 

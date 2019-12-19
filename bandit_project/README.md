@@ -1,6 +1,6 @@
 # A simple bandit project for beginners
 
-This is a course project for SI140 2019 at ShanghaiTech offered by Prof. Ziyu Shao.
+This is a course project for SI140 2019 at ShanghaiTech University offered by Prof. Ziyu Shao.
 
 The project specification is [here](./bandit_project.pdf).
 
