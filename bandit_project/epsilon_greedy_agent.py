@@ -27,6 +27,9 @@ class EpsilonGreedyAgent(Agent):
             I = np.argmax(self.theta_hat_array) + 1
         reward = get_reward(I)
 
+        self.count_array[I-1] += 1
+        self.theta_hat_array[I-1] += (reward - self.theta_hat_array[I-1]) / self.count_array[I-1]
+
         return I, reward
 
 
