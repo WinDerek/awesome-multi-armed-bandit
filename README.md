@@ -10,6 +10,29 @@ A curated list of resources about **multi-armed bandit** (**MAB**).
 
 The multi-armed bandit problem is a classic **reinforcement learning** problem that exemplifies the exploration-exploitation tradeoff dilemma.
 
+## Setup
+
+If you want to run the jupyter notebooks in this repository, read through the following instructions in this section. Otherwise, ignore this section. You can still view the result of the notebooks by following the links listed in corresponding README files.
+
+### Install conda
+
+[conda.io](https://conda.io)
+
+### Create the environment from the text file and activate it
+
+```shell
+$ conda create --name mab_env --file mab_env.txt
+$ conda activate mab_env
+```
+
+### Start jupyter-lab
+
+```shell
+$ jupyter-lab
+```
+
+Then open the url in your browser and enjoy the GUI offered by jupyter-lab!
+
 ## Books
 
 - [Multi-armed Bandit Allocation Indices](https://www.amazon.com/Multi-armed-Bandit-Allocation-Indices-Gittins/dp/0470670029)
