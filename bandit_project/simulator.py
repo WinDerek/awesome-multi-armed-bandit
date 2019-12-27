@@ -65,7 +65,7 @@ class Simulator:
 
 
     def plot(self):
-        color_list = ['#cf000f', '#19b5fe', '#29f1c3']
+        color_list = ['#1f3a93', '#1e8bc3', '#19b5fe', '#f03434', '#f62459', '#e26a6a', '#1e824c', '#049372', '#00b16a']
 
         number_of_agent = self.reward_3d_ndarray.shape[0]
 
