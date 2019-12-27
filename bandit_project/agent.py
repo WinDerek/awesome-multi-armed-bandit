@@ -1,3 +1,4 @@
+import copy
 import numpy as np
 from machine import get_reward
 
@@ -54,7 +55,7 @@ class EpsilonGreedyAgent(Agent):
 
 
     def name(self):
-        return '$\epsilon$-greedy with $\epsilon = {}$'.format(self.epsilon)
+        return '$\\epsilon$-greedy with $\\epsilon = {}$'.format(self.epsilon)
 
 
 class UcbAgent:
@@ -97,9 +98,9 @@ class UcbAgent:
 
 
 class TsAgent:
-    def __init__(self, alpha, beta, **kwds):
-        self.alpha = alpha
-        self.beta = beta
+    def __init__(self, alpha_list, beta_list, **kwds):
+        self.initial_alpha_list = copy.deepcopy(alpha_list)
+        self.initial_beta_list = copy.deepcopy(beta_list)
 
         self.reset()
 
@@ -107,14 +108,26 @@ class TsAgent:
 
     
     def reset(self):
-        return
+        self.theta_hat_array = np.zeros(3, dtype=float)
+        self.alpha_list = copy.deepcopy(self.initial_alpha_list)
+        self.beta_list = copy.deepcopy(self.initial_beta_list)
 
 
     def pull_arm(self):
-        I = -1
-        reward = -1
+        # Sample theta hat from Beta distribution
+        for i in range(3):
+            self.theta_hat_array[i] = np.random.beta(self.alpha_list[i], self.beta_list[i])
+
+        # Select the arm and get the corresponding reward
+        I = np.argmax(self.theta_hat_array) + 1
+        reward = get_reward(I)
+
+        # Update alpha and beta
+        self.alpha_list[I - 1] += reward
+        self.beta_list[I - 1] += 1 - reward
+
         return I, reward
 
     
     def name(self):
-        return 'TS with $\alpha = {}$, $\beta = {}$'.format(self.alpha, self.beta)
+        return "TS with \$\\{{(\\alpha_1, \\beta_1) = ({}, {}), (\\alpha_2, \\beta_2) = ({}, {}), (\\alpha_3, \\beta_3) = ({}, {})\\}}\$".format(self.initial_alpha_list[0], self.initial_alpha_list[1], self.initial_alpha_list[2], self.initial_beta_list[0], self.initial_beta_list[1], self.initial_beta_list[2])
