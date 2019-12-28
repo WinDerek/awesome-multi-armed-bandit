@@ -83,12 +83,18 @@ class Simulator:
         for i in range(number_of_agent):
             ax.plot(range(1, self.number_of_time_slot + 1), self.mean_average_reward_2d_ndarray[i], '--', color=color_list[i], label=self.agent_name_array[i])
             ax.legend(loc='lower right')
+            ax.set_title('Mean average reward v.s. time slot $t$')
+            ax.set_xlabel('Time slot $t$')
+            ax.set_ylabel('Mean average reward')
 
         # Plot the first 300 range of the mean average reward
         fig, ax = plt.subplots(figsize=(16,8), dpi=200)
         for i in range(number_of_agent):
             ax.plot(range(1, 301), self.mean_average_reward_2d_ndarray[i][0:300], '--', color=color_list[i], label=self.agent_name_array[i])
             ax.legend(loc='lower right')
+            ax.set_title('Mean average reward v.s. time slot $t \in [1, 300]$')
+            ax.set_xlabel('Time slot $t$')
+            ax.set_ylabel('Mean average reward')
 
         plt.show()
 
