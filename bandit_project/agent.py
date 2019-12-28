@@ -130,4 +130,4 @@ class TsAgent:
 
     
     def name(self):
-        return "TS with \$\\{{(\\alpha_1, \\beta_1) = ({}, {}), (\\alpha_2, \\beta_2) = ({}, {}), (\\alpha_3, \\beta_3) = ({}, {})\\}}\$".format(self.initial_alpha_list[0], self.initial_alpha_list[1], self.initial_alpha_list[2], self.initial_beta_list[0], self.initial_beta_list[1], self.initial_beta_list[2])
+        return 'TS with $\{{(\\alpha_1, \\beta_1) = ({}, {}), (\\alpha_2, \\beta_2) = ({}, {}), (\\alpha_3, \\beta_3) = ({}, {})\}}$'.format(self.initial_alpha_list[0], self.initial_alpha_list[1], self.initial_alpha_list[2], self.initial_beta_list[0], self.initial_beta_list[1], self.initial_beta_list[2])
