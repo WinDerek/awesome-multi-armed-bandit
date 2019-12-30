@@ -49,4 +49,4 @@ Then open the url in your browser and enjoy the GUI offered by jupyter-lab!
 
 Get your hands dirty by doing some projects (simulations)!
 
-- [A simple project by Prof. Ziyu Shao](./bandit_project)
+- [A simple project by Prof. Ziyu Shao](./bandit_project): [Live Jupyter Notebook](https://nbviewer.jupyter.org/github/DerekDick/awesome-multi-armed-bandit/blob/master/bandit_project/three_armed_bandit.ipynb)
