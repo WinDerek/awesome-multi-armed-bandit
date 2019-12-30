@@ -15,7 +15,7 @@ class Agent:
     def pull_arm(self):
         """
         Returns:
-            (arm_index, reward)
+            (arm_index, reward, round_payload)
         """
         return -1, -1.0
 
@@ -51,7 +51,7 @@ class EpsilonGreedyAgent(Agent):
         self.count_array[I-1] += 1
         self.theta_hat_array[I-1] += (reward - self.theta_hat_array[I-1]) / self.count_array[I-1]
 
-        return I, reward
+        return I, reward, None
 
 
     def name(self):
@@ -90,7 +90,7 @@ class UcbAgent:
         self.count_array[I - 1] += 1
         self.theta_hat_array[I - 1] += (reward - self.theta_hat_array[I - 1]) / self.count_array[I - 1]
 
-        return I, reward
+        return I, reward, None
 
     
     def name(self):
@@ -126,7 +126,7 @@ class TsAgent:
         self.alpha_list[I - 1] += reward
         self.beta_list[I - 1] += 1 - reward
 
-        return I, reward
+        return I, reward, (copy.deepcopy(self.alpha_list), copy.deepcopy(self.beta_list))
 
     
     def name(self):
