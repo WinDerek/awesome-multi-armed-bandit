@@ -45,6 +45,10 @@ Then open the url in your browser and enjoy the GUI offered by jupyter-lab!
 - [Scaling Multi-Armed Bandit Algorithms](https://dbis.ipd.kit.edu/download/S-MAB_FOUCHE_KDD19.pdf)
 - [Multi-Armed Bandits with Correlated Arms](https://arxiv.org/abs/1911.03959)
 
+## Websites
+
+- [https://banditalgs.com/](https://banditalgs.com/)
+
 ## Practical projects
 
 Get your hands dirty by doing some projects (simulations)!

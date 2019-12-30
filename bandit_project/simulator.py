@@ -1,5 +1,4 @@
 import numpy as np
-from machine import get_reward
 import matplotlib.pyplot as plt
 from util.plot_utils import plot_vertical_bar_chart
 import pickle
