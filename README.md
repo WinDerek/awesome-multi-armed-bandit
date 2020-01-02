@@ -2,10 +2,6 @@
 
 A curated list of resources about **multi-armed bandit** (**MAB**).
 
-> Attention: this repository is still under construction! :construction:
->
-> If you have any ideas for this repository, please create a new issue. :raised_hands:
-
 ## Introduction
 
 The multi-armed bandit problem is a classic **reinforcement learning** problem that exemplifies the exploration-exploitation tradeoff dilemma.
@@ -44,6 +40,7 @@ Then open the url in your browser and enjoy the GUI offered by jupyter-lab!
 - The 1979 paper by Gittins: [Bandit Processes and Dynamic Allocation Indices](https://people.eecs.berkeley.edu/~russell/classes/cs294/s11/readings/Gittins:1979.pdf)
 - [Scaling Multi-Armed Bandit Algorithms](https://dbis.ipd.kit.edu/download/S-MAB_FOUCHE_KDD19.pdf)
 - [Multi-Armed Bandits with Correlated Arms](https://arxiv.org/abs/1911.03959)
+- [Deep Bayesian Bandits Showdown: An Empirical Comparison of Bayesian Deep Networks for Thompson Sampling](https://arxiv.org/abs/1802.09127)
 
 ## Websites
 
