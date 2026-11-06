@@ -41,6 +41,7 @@ Then open the url in your browser and enjoy the GUI offered by jupyter-lab!
 - [Scaling Multi-Armed Bandit Algorithms](https://dbis.ipd.kit.edu/download/S-MAB_FOUCHE_KDD19.pdf)
 - [Multi-Armed Bandits with Correlated Arms](https://arxiv.org/abs/1911.03959)
 - [Deep Bayesian Bandits Showdown: An Empirical Comparison of Bayesian Deep Networks for Thompson Sampling](https://arxiv.org/abs/1802.09127)
+- [Chunks as Arms: Multi-Armed Bandit-Guided Sampling for Long-Context LLM Preference Optimization](https://aclanthology.org/2026.acl-long.161/)
 
 ## Websites
 
